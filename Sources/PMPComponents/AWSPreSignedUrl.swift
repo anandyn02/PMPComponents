@@ -8,7 +8,7 @@ public enum AwsUploaderType: String {
 
 public class AWSS3Uploader {
     
-    class func upload(_ fileURL: URL, toPresignedURL remoteURL: URL, fileType: AwsUploaderType, completion: @escaping (Result<URL?, Error>) -> Void) {
+   open class func upload(_ fileURL: URL, toPresignedURL remoteURL: URL, fileType: AwsUploaderType, completion: @escaping (Result<URL?, Error>) -> Void) {
         
          var request = URLRequest(url:  remoteURL )
          request.cachePolicy = .reloadIgnoringLocalCacheData
