@@ -10,7 +10,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-class ReadTimeView: UIView {
+public class ReadTimeView: UIView {
 
     private lazy var postImageView: UIImageView = {
         let imageView = IOComponent.createImageView(radius: 0, bgColor: .clear)
@@ -22,7 +22,7 @@ class ReadTimeView: UIView {
     private lazy var readLbl = IOComponent.createLabel(text: "Read Time", font: UIFont.systemFont(ofSize: 12), color: .black)
     
     
-    override init(frame: CGRect) {
+   public override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
@@ -30,24 +30,24 @@ class ReadTimeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var readFont: UIFont? {
+    public var readFont: UIFont? {
         didSet {
             readLbl.font = readFont
         }
     }
     
-    var readColor: UIColor? {
+    public var readColor: UIColor? {
         didSet {
             readLbl.textColor = readColor
         }
     }
-    var readText: String = "" {
+    public var readText: String = "" {
         didSet {
             readLbl.text = readText
         }
     }
     
-    var readIcon: UIImage? {
+   public var readIcon: UIImage? {
         didSet {
             postImageView.image = readIcon
         }
