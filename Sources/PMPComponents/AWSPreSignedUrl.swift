@@ -1,12 +1,12 @@
 import Foundation
 
-enum AwsUploaderType: String {
+public enum AwsUploaderType: String {
     case image = "image/jpeg"
     case pdf = "application/pdf"
     case video = "video/mp4"
 }
 
-class AWSS3Uploader {
+public class AWSS3Uploader {
     
     class func upload(_ fileURL: URL, toPresignedURL remoteURL: URL, fileType: AwsUploaderType, completion: @escaping (Result<URL?, Error>) -> Void) {
         
