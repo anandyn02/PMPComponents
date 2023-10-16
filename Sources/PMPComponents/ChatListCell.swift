@@ -177,7 +177,8 @@ public class ChatListCell: UITableViewCell {
        
        let chatContainer = IOComponent.createView(bgColor: .white)
        chatContainer.layer.cornerRadius = 12
-       chatContainer.PMPDropShadow()
+       chatContainer.PMPDropShadow(color: .black, opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 3, scale: true)
+
        chatContainer.clipsToBounds = true
        
        chatContainer.subviews {
