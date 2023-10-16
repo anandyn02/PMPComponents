@@ -10,9 +10,9 @@ import UIKit
 import Stevia
 import PMP_Component
 
-class ChatListCell: UITableViewCell {
+public class ChatListCell: UITableViewCell {
     
-    static let cellIdentifier = "ChatListCell"
+    public static let cellIdentifier = "ChatListCell"
     
     private let chatStack = IOComponent.createStackView(axisType: .horizontal, list: [])
     private lazy var chatView = IOComponent.createView(radius: 0, bgColor: UIColor.white)
@@ -136,12 +136,12 @@ class ChatListCell: UITableViewCell {
         }
     }
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         render()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
