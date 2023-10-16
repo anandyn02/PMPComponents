@@ -46,7 +46,7 @@ public class ChatListCell: UITableViewCell {
     
     public var isEditModeOn: Bool =  false {
         didSet {
-            checkMarkButton.isHidden = !isEditModeOn
+            checkMarkButton.isHidden = isEditModeOn
         }
     }
     public var isChatSelected = false {
