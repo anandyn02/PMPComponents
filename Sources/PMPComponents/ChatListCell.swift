@@ -247,7 +247,7 @@ public class ChatListCell: UITableViewCell {
         
         layout {
             4
-            |-0-chatStack-10-|
+            |-0-chatStack-0-|
             6
         }
        
