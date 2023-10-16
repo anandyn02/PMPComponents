@@ -44,10 +44,14 @@ public class ChatListCell: UITableViewCell {
     
     public var placeHolderName: String = ""
     
-
+    public var isEditModeOn: Bool =  false {
+        didSet {
+            checkMarkButton.isHidden = !isEditModeOn
+        }
+    }
     public var isChatSelected = false {
         didSet {
-            checkMarkButton.isHidden = !isChatSelected
+            checkMarkButton.isSelected = isChatSelected
         }
     }
     
