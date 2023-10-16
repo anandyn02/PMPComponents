@@ -70,6 +70,18 @@ public class ChatListCell: UITableViewCell {
         }
     }
     
+    public var senderFont: UIFont? {
+        didSet {
+            senderLabel.font = senderFont
+        }
+    }
+    
+    public var senderColor: UIColor? {
+        didSet {
+            senderLabel.textColor = senderColor
+        }
+    }
+    
     public var imagesUrl: [URL?] = [] {
         didSet {
             avatar.configure(imagesUrl, size: 50, placeholder: placeHolderName)
@@ -210,9 +222,9 @@ public class ChatListCell: UITableViewCell {
        chatView.layout {
            8
            |chatLabel-""-timeLabel-14-|
-           0
+           2
            |senderStack-(>=35)-|
-           0
+           2
            |messageLabel-(>=35)-|
            10
        }
