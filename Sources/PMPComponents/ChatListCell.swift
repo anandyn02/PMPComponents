@@ -64,6 +64,18 @@ public class ChatListCell: UITableViewCell {
         }
     }
     
+    public var timeAgoFont: UIFont? {
+        didSet {
+            timeLabel.font = timeAgoFont
+        }
+    }
+    
+    public var timeAgoColor: UIColor? {
+        didSet {
+            timeLabel.textColor = timeAgoColor
+        }
+    }
+    
     public var senderName: String = "" {
         didSet {
             senderLabel.text = senderName
