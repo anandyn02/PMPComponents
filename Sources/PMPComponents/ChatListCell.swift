@@ -246,9 +246,9 @@ public class ChatListCell: UITableViewCell {
         }
         
         layout {
-            10
+            4
             |-0-chatStack-10-|
-            10
+            6
         }
        
        align(rights: timeLabel, unreadCountLabel)
