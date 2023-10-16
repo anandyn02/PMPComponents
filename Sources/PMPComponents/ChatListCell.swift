@@ -167,6 +167,7 @@ public class ChatListCell: UITableViewCell {
        
        unreadCountLabel.width(20).height(20)
        unreadCountLabel.layer.cornerRadius = 10
+       unreadCountLabel.clipsToBounds = true
        
        unreadCountLabel.backgroundColor =  UIColor(red: 0.89, green: 0.52, blue: 0.06, alpha: 0.5)
        unreadCountLabel.isHidden = true
