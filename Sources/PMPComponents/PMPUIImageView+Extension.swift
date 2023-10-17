@@ -11,7 +11,7 @@ import Kingfisher
 public extension UIImageView {
     func loadImage(_ url: URL?, placeHolderName:  String) {
         guard let imageURL = url else {
-          //  image = #imageLiteral(resourceName: "avatarPlaceholder")
+            image = UIImage(named: placeHolderName)
             return
         }
         //#imageLiteral(resourceName: "avatarPlaceholder")
