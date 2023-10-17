@@ -11,6 +11,8 @@ import PMP_Component
 
 public class SelectContactCell: UITableViewCell {
     
+    public static let cellIdentifier = "SelectContactCell"
+
    public let label = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 12), color: .black)
    public let checkMark = IOComponent.createButton(text: "", titleColor: .clear, bgColor: .clear)
    public let avatar = Avatar()
