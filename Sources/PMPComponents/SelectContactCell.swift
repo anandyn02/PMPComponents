@@ -57,7 +57,7 @@ public class SelectContactCell: UITableViewCell {
         
         containerView.layout(
             5,
-            |-20-avatar-10-label-10-checkMark-20-|,
+            |-10-avatar-10-label-""-checkMark-10-|,
             5
         )
         
