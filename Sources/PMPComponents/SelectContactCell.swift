@@ -60,6 +60,8 @@ public class SelectContactCell: UITableViewCell {
             |-20-avatar-10-label-10-checkMark-20-|,
             5
         )
+        
+        containerView.height(52)
     }
     
 
