@@ -65,6 +65,7 @@ public class ChatListCell: UITableViewCell {
         didSet {
             emptyText.isHidden = !isTextEmpty
             messageLabel.isHidden = isTextEmpty
+            senderLabel.isHidden = isTextEmpty
         }
     }
     
