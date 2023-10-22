@@ -13,6 +13,8 @@ public enum ChatInfoCellType {
     case none
     case textAccessoryIcon
     case accessoryIcon
+    case cancelAccessoryIcon
+    case cancelIcon
 }
 
 public class ChatInfoTableViewCell: UITableViewCell {
@@ -42,11 +44,11 @@ public class ChatInfoTableViewCell: UITableViewCell {
             case .none:
                 acessoryStack.isHidden = true
                 
-            case .textAccessoryIcon:
+            case .textAccessoryIcon, .cancelAccessoryIcon:
                 accessoryLabel.isHidden = false
                 accessoryImage.isHidden = false
                 
-            case .accessoryIcon:
+            case .accessoryIcon, .cancelIcon:
                 accessoryLabel.isHidden = true
                 accessoryImage.isHidden = false
             }
