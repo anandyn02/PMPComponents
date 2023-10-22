@@ -36,7 +36,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
     public var cellType: ChatInfoCellType = .none {
         didSet {
             
-            acessoryStack.isHidden = true
+            acessoryStack.isHidden = false
 
             switch cellType {
             case .none:
