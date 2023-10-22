@@ -16,6 +16,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
     public let label = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 14), color: .black)
     public let avatar = IOComponent.createImageView(radius: 20, bgColor: .red)
     public let containtView = IOComponent.createView(bgColor: .yellow)
+    public let div = IOComponent.createView(bgColor: UIColor(red: 201/255, green: 197/255, blue: 202/255, alpha: 1.0))
 
     public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -36,7 +37,6 @@ public class ChatInfoTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
-        let div = IOComponent.createView(bgColor: UIColor(red: 201/255, green: 197/255, blue: 202/255, alpha: 1.0))
         
         containtView.height(72)
         avatar.width(40).height(40)
