@@ -43,7 +43,7 @@ public class ChatSectionHeaderView: UIView {
         layout {
             4
             |-20-label-4-view
-            4
+            14
         }
         
     }
