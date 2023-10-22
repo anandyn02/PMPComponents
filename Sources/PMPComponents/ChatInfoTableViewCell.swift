@@ -84,24 +84,16 @@ public class ChatInfoTableViewCell: UITableViewCell {
         
         titleStack.spacing = 2
         
-        let contentStack = IOComponent.createStackView(axisType: .horizontal, list: [avatar, titleStack])
-        contentStack.spacing = 10
-        contentStack.alignment = .leading
-        
-        
         containtView.subviews {
-//            avatar
-//            titleStack
-            contentStack
+            avatar
+            titleStack
             acessoryStack
             div
         }
         
-       
         containtView.layout {
             16
-            |-20-contentStack-""-acessoryStack-20-|
-           // |-20-avatar-10-titleStack-""-acessoryStack-20-|
+            |-20-avatar-10-titleStack-""-acessoryStack-20-|
             15
             |-60-div-20-|
             1
