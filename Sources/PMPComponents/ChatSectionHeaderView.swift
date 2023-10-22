@@ -12,7 +12,8 @@ import PMP_Component
 public class ChatSectionHeaderView: UIView {
 
     public let label = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 14), color: .black)
-    public let subLabel = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 12), color: .lightGray)
+    public let subLabel = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 12), color: .white)
+    public let view = IOComponent.createView(bgColor: .red)
     
     public override init(frame: CGRect) {
          super.init(frame: frame)
@@ -25,14 +26,23 @@ public class ChatSectionHeaderView: UIView {
     
     func configure(){
         
+        view.layer.cornerRadius = 10
+        view.width(20).height(20)
+        
+        view.subviews {
+            subLabel
+        }
+        
+        subLabel.centerHorizontally().centerVertically()
+        
         subviews {
             label
-            subLabel
+            view
         }
         
         layout {
             4
-            |-20-label-4-subLabel
+            |-20-label-4-view
             4
         }
         
