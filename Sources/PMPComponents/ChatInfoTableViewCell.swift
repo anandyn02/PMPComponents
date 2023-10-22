@@ -93,7 +93,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
         
         containtView.layout {
             16
-            |-20-avatar-10-titleStack-10-acessoryStack-20-|
+            |-20-avatar-10-titleStack-""-acessoryStack-20-|
             15
             |-60-div-20-|
             1
