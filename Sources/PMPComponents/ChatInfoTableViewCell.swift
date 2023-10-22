@@ -40,6 +40,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
         
         containtView.height(72)
         avatar.width(40).height(40)
+        div.height(1)
         
         containtView.subviews {
             avatar
