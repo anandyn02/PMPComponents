@@ -52,6 +52,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
             |-20-avatar-10-label
             15
             |-40-div-20-|
+            1
         }
         
         subviews {
