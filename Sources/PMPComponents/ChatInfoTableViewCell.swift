@@ -74,6 +74,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
         
         accessoryImage.backgroundColor = .clear
         accessoryImage.width(30).height(30)
+        accessoryLabel.width(40)
         
         acessoryStack.alignment = .trailing
         
