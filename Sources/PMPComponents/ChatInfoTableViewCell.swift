@@ -48,8 +48,9 @@ public class ChatInfoTableViewCell: UITableViewCell {
         
         containtView.layout {
             16
-            |-20-avatar-label
-            16
+            |-20-avatar-10-label
+            15
+            |-40-div-20-|
         }
         
         subviews {
