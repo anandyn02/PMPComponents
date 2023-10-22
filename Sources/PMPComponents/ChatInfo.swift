@@ -15,12 +15,18 @@ public struct ChatInfo {
     public var name: String?
     public var subName: String?
     
-    public init(type: ChatInfoCellType, imageName: String?, imageUrl: String?, userId: String?, name: String?, subName: String?){
+    public var accessoryImage: String?
+    public var accessoryText: String?
+    
+    public init(type: ChatInfoCellType, imageName: String?, imageUrl: String?, userId: String?, name: String?, subName: String?, accImage: String?, accText: String?){
         self.type = type
         self.imageName = imageName
         self.imageUrl = imageUrl
         self.infoId = userId
         self.name = name
         self.subName = subName
+        self.accessoryImage = accImage
+        self.accessoryText = accText
+        
     }
 }
