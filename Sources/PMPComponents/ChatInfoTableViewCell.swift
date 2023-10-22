@@ -44,6 +44,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
         containtView.subviews {
             avatar
             label
+            div
         }
         
         containtView.layout {
