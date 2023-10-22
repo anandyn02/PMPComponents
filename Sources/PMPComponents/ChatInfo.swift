@@ -8,7 +8,7 @@
 import Foundation
 
 public struct ChatInfo {
-    public  let type: ChatInfoCellType
+    public var type: ChatInfoCellType = .none
     public var imageName: String?
     public var imageUrl: String?
     public var chatId: String?
