@@ -9,14 +9,49 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public class ChatInfoTableViewCell: UITableViewCell {
+public enum ChatInfoCellType {
+    case none
+    case textAccessoryIcon
+    case accessoryIcon
+}
 
+public class ChatInfoTableViewCell: UITableViewCell {
+    
     public static let cellIdentifier = "ChatInfoTableViewCell"
     
     public let label = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 14), color: .black)
+    public let sublabel = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 12), color: .black)
+
     public let avatar = IOComponent.createImageView(radius: 20, bgColor: .red)
     public let containtView = IOComponent.createView(bgColor: .yellow)
     public let div = IOComponent.createView(bgColor: UIColor(red: 201/255, green: 197/255, blue: 202/255, alpha: 1.0))
+    
+    public lazy var accessoryLabel = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 12), color: .lightGray)
+    public lazy var accessoryImage = IOComponent.createImageView(radius: 0, bgColor: .red)
+    
+    private lazy var acessoryStack = IOComponent.createStackView(axisType: .horizontal, list: [accessoryLabel, accessoryImage])
+    
+    private lazy var titleStack = IOComponent.createStackView(axisType: .vertical, list: [label, sublabel])
+    
+    public var cellType: ChatInfoCellType = .none {
+        didSet {
+            
+            acessoryStack.isHidden = true
+
+            switch cellType {
+            case .none:
+                acessoryStack.isHidden = true
+                
+            case .textAccessoryIcon:
+                accessoryLabel.isHidden = false
+                accessoryImage.isHidden = false
+                
+            case .accessoryIcon:
+                accessoryLabel.isHidden = true
+                accessoryImage.isHidden = false
+            }
+        }
+    }
 
     public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -42,17 +77,20 @@ public class ChatInfoTableViewCell: UITableViewCell {
         avatar.width(40).height(40)
         div.height(1)
         
+        titleStack.spacing = 2
+        
         containtView.subviews {
             avatar
-            label
+            titleStack
+            acessoryStack
             div
         }
         
         containtView.layout {
             16
-            |-20-avatar-10-label
+            |-20-avatar-10-titleStack-10-acessoryStack-20-|
             15
-            |-40-div-20-|
+            |-60-div-20-|
             1
         }
         
