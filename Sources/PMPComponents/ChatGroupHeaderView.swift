@@ -13,7 +13,7 @@ public class ChatGroupHeaderView: UIView {
     
     public let label = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 14), color: .black)
     public let subLabel = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 12), color: .lightGray)
-    public let avatar = Avatar()
+    public let avatar = IOComponent.createImageView(radius: 40, bgColor: .clear)
     
     public override init(frame: CGRect) {
          super.init(frame: frame)
