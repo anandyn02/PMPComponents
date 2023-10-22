@@ -72,6 +72,10 @@ public class ChatInfoTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
+        accessoryImage.backgroundColor = .clear
+        accessoryImage.width(30).height(30)
+        
+        acessoryStack.alignment = .trailing
         
         containtView.height(72)
         avatar.width(40).height(40)
