@@ -9,7 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-class ChatInfoTableViewCell: UITableViewCell {
+public class ChatInfoTableViewCell: UITableViewCell {
 
     public static let cellIdentifier = "ChatInfoTableViewCell"
     
