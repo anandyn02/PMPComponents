@@ -8,10 +8,10 @@
 import Foundation
 
 public struct ChatInfo {
-    let type: ChatInfoCellType
-    var imageName: String?
-    var imageUrl: String?
-    var chatId: String?
-    var name: String?
-    var subName: String?
+    public  let type: ChatInfoCellType
+    public var imageName: String?
+    public var imageUrl: String?
+    public var chatId: String?
+    public var name: String?
+    public var subName: String?
 }
