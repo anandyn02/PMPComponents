@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ChatInfo {
+public struct ChatInfo: Equatable {
     public var type: ChatInfoCellType = .none
     public var imageName: String?
     public var imageUrl: String?
@@ -17,6 +17,10 @@ public struct ChatInfo {
     
     public var accessoryImage: String?
     public var accessoryText: String?
+    
+    public static func == (lhs: ChatInfo, rhs: ChatInfo) -> Bool {
+        lhs.infoId == rhs.infoId
+    }
     
     public init(type: ChatInfoCellType, imageName: String?, imageUrl: String?, userId: String?, name: String?, subName: String?, accImage: String?, accText: String?){
         self.type = type
