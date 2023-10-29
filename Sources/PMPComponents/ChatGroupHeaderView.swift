@@ -11,9 +11,15 @@ import Stevia
 
 public class ChatGroupHeaderView: UIView {
     
-    public let label = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 14), color: .black)
-    public let subLabel = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 12), color: .lightGray)
+    public let label = IOComponent.createTextField(text: "Enter Group Name", textColor: .black, font: .systemFont(ofSize: 16))
+    public let subLabel = IOComponent.createTextField(text: "Enter Group Description", textColor: .lightGray, font: .systemFont(ofSize: 12))
     public let avatar = IOComponent.createImageView(radius: 40, bgColor: .clear)
+        
+    public var isEditable: Bool = false {
+        didSet {
+            updateUI()
+        }
+    }
     
     public override init(frame: CGRect) {
          super.init(frame: frame)
@@ -23,6 +29,10 @@ public class ChatGroupHeaderView: UIView {
      required init?(coder: NSCoder) {
          fatalError("init(coder:) has not been implemented")
      }
+    
+    private func updateUI() {
+        
+    }
     
     func configure(){
         
