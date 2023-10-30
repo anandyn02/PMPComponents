@@ -32,7 +32,7 @@ public class ChatGroupHeaderView: UIView {
     
     private func updateUI() {
         label.isEnabled = isEditable
-        subLabel.isEnabled = isEditable
+      //  subLabel.isEnabled = isEditable
         
 //        label.textAlignment = isEditable ? .left : .center
 //        subLabel.textAlignment = isEditable ? .left : .center
@@ -45,7 +45,7 @@ public class ChatGroupHeaderView: UIView {
         subviews {
             avatar
             label
-            subLabel
+          //  subLabel
         }
         
         avatar.width(80).height(80)
@@ -55,9 +55,9 @@ public class ChatGroupHeaderView: UIView {
             avatar.centerHorizontally()
             10
             |-20-label.height(50)-20-|
-            2
-            |-20-subLabel.height(30)-20-|
             20
+//            |-20-subLabel.height(30)-20-|
+//            20
             
         }
         
