@@ -10,6 +10,8 @@ import RNCryptor
 
 public class PMPCrypto {
     
+    public static let encryptKey = "PMPAnand"
+    
     public class func encryptMessage(message: String, encryptionKey: String) throws -> String {
           let messageData = message.data(using: .utf8)!
           let cipherData = RNCryptor.encrypt(data: messageData, withPassword: encryptionKey)
