@@ -31,10 +31,16 @@ public class ChatGroupHeaderView: UIView {
      }
     
     private func updateUI() {
+        label.isEnabled = isEditable
+        subLabel.isEnabled = isEditable
         
+        label.textAlignment = isEditable ? .left : .center
+        subLabel.textAlignment = isEditable ? .left : .center
     }
     
     func configure(){
+        
+        isEditable = false
         
         subviews {
             avatar
