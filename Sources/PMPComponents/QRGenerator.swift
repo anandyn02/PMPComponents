@@ -15,7 +15,7 @@ public class QRGenerator {
         if let QRFilter = CIFilter(name: "CIQRCodeGenerator") {
             QRFilter.setValue(data, forKey: "inputMessage")
             
-            let transform = CGAffineTransform(scaleX: 3, y: 3)
+            let transform = CGAffineTransform(scaleX: 4, y: 4)
             
             if let QRImage = QRFilter.outputImage?.transformed(by: transform) {
                 return UIImage(ciImage: QRImage)
