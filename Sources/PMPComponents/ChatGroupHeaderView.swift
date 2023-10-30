@@ -20,7 +20,7 @@ public class ChatGroupHeaderView: UIView {
             updateUI()
         }
     }
-    
+
     public override init(frame: CGRect) {
          super.init(frame: frame)
          configure()
@@ -34,8 +34,8 @@ public class ChatGroupHeaderView: UIView {
         label.isEnabled = isEditable
         subLabel.isEnabled = isEditable
         
-        label.textAlignment = isEditable ? .left : .center
-        subLabel.textAlignment = isEditable ? .left : .center
+//        label.textAlignment = isEditable ? .left : .center
+//        subLabel.textAlignment = isEditable ? .left : .center
     }
     
     func configure(){
