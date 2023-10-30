@@ -54,9 +54,9 @@ public class ChatGroupHeaderView: UIView {
             20
             avatar.centerHorizontally()
             10
-            |-20-label-20-|
+            |-20-label.height(50)-20-|
             2
-            |-20-subLabel-20-|
+            |-20-subLabel.height(30)-20-|
             20
             
         }
