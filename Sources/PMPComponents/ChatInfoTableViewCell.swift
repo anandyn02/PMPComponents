@@ -79,6 +79,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
         accessoryLabel.width(40)
         
         acessoryStack.alignment = .trailing
+        acessoryStack.height(40)
         
         containtView.height(72)
         avatar.width(40).height(40)
