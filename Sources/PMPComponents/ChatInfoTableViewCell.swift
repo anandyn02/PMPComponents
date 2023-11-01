@@ -31,7 +31,7 @@ public class ChatInfoTableViewCell: UITableViewCell {
     public lazy var accessoryLabel = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 12), color: .lightGray)
     public lazy var accessoryImage = IOComponent.createImageView(radius: 0, bgColor: .red)
     
-    private lazy var acessoryStack = IOComponent.createStackView(axisType: .horizontal, list: [accessoryLabel, accessoryImage])
+    public lazy var acessoryStack = IOComponent.createStackView(axisType: .horizontal, list: [accessoryLabel, accessoryImage])
     
     private lazy var titleStack = IOComponent.createStackView(axisType: .vertical, list: [label, sublabel])
     
