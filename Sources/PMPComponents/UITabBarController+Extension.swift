@@ -37,7 +37,7 @@ public extension UITabBarController {
     }
     
     /// Is the tab bar currently off the screen.
-    private var tabBarHidden: Bool {
+    var tabBarHidden: Bool {
         tabBar.frame.origin.y >= UIScreen.main.bounds.height
     }
 }
