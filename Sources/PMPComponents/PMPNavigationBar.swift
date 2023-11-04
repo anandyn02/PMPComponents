@@ -13,7 +13,7 @@ public class PMPNavigationBar: UIView {
     
     public var backButton = IOComponent.createButton(text: "", titleColor: .black, bgColor: .clear)
     public let navTitle = IOComponent.createLabel(text: "Media", font: .systemFont(ofSize: 14), color: .black)
-    public let div = IOComponent.createView(bgColor: UIColor(red: 201/255, green: 197/255, blue: 202/255, alpha: 1.0))
+    public let div = IOComponent.createView(bgColor: .black)
 
     public override init(frame: CGRect) {
          super.init(frame: frame)
@@ -36,7 +36,7 @@ public class PMPNavigationBar: UIView {
             
             |-10-backButton.width(40).height(40)
             10
-            |-0-div-0-|
+            |-0-div.height(1)-0-|
             1
         }
         
