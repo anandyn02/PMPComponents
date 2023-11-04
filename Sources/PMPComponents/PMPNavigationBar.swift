@@ -34,13 +34,13 @@ public class PMPNavigationBar: UIView {
         
         layout {
             
-            |-20-backButton.width(40).height(40)
+            |-10-backButton.width(40).height(40)
             10
             |-0-div-0-|
             1
         }
         
-        navTitle.bottom(30).centerHorizontally()
+        navTitle.bottom(20).centerHorizontally()
         height(90)
         
     }
