@@ -40,7 +40,7 @@ public class PMPNavigationBar: UIView {
             1
         }
         
-        navTitle.bottom(40).centerHorizontally()
+        navTitle.bottom(30).centerHorizontally()
         height(90)
         
     }
