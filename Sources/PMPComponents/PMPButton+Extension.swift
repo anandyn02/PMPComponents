@@ -46,5 +46,7 @@ public class RightAlignedIconButton: UIButton {
         let availableSpace = bounds.inset(by: contentEdgeInsets)
         let availableWidth = availableSpace.width - imageEdgeInsets.left - (imageView?.frame.width ?? 0) - (titleLabel?.frame.width ?? 0)
         titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: availableWidth / 2)
+        imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+
     }
 }
