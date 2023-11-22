@@ -34,4 +34,16 @@ public extension UIView {
     layer.shouldRasterize = true
     layer.rasterizationScale = scale ? UIScreen.main.scale : 1
   }
+    
+    func addDashedCircle(strokeColor: UIColor, fillColor: UIColor) {
+        let circleLayer = CAShapeLayer()
+        circleLayer.path = UIBezierPath(ovalIn: bounds).cgPath
+        circleLayer.lineWidth = 2.0
+        circleLayer.strokeColor =  strokeColor.cgColor//border of circle
+        circleLayer.fillColor = fillColor.cgColor//inside the circle
+        circleLayer.lineJoin = .round
+        circleLayer.lineDashPattern = [6,3]
+        layer.addSublayer(circleLayer)
+    }
+    
 }
