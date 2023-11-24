@@ -53,7 +53,7 @@ public class ChatGroupHeaderView: UIView {
         }
         
         avatar.width(80).height(80)
-        editButton.width(40).height(40).top(20).centerHorizontally(offset: 20)
+        editButton.width(40).height(40).top(30).centerHorizontally(offset: 30)
 
         layout {
             20
