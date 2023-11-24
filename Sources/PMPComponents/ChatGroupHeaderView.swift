@@ -14,6 +14,9 @@ public class ChatGroupHeaderView: UIView {
     public let label = IOComponent.createTextField(text: "Enter Group Name", textColor: .black, font: .systemFont(ofSize: 16))
     public let subLabel = IOComponent.createTextField(text: "Enter Group Description", textColor: .lightGray, font: .systemFont(ofSize: 12))
     public let avatar = IOComponent.createImageView(radius: 40, bgColor: .clear)
+    
+    public let editButton = IOComponent.createButton(text: "", titleColor: .clear, bgColor: .clear)
+   
         
     public var isEditable: Bool = false {
         didSet {
@@ -45,11 +48,13 @@ public class ChatGroupHeaderView: UIView {
         subviews {
             avatar
             label
+            editButton
           //  subLabel
         }
         
         avatar.width(80).height(80)
-        
+        editButton.width(40).height(40).top(20).centerHorizontally(offset: 20)
+
         layout {
             20
             avatar.centerHorizontally()
