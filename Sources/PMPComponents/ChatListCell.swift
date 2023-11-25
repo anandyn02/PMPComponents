@@ -38,7 +38,7 @@ public class ChatListCell: UITableViewCell {
 
     private let senderLabel = IOComponent.createLabel(text: "Anand Kumar", font: .systemFont(ofSize: 16), color: .black)
 
-    private let emptyText = IOComponent.createLabel(text: "  It's time to started conversation.  ", font: UIFont.systemFont(ofSize: 10), color: .black)
+    public let emptyText = IOComponent.createLabel(text: "  It's time to start conversation.  ", font: UIFont.systemFont(ofSize: 10), color: .black)
     
     private let avatar = Avatar()
     
