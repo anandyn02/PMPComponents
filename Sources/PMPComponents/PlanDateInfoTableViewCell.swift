@@ -72,11 +72,11 @@ public class PlanDateInfoTableViewCell: UITableViewCell {
         
         layout {
             10
-            |-20-label-20-|
+            |-20-label-20-| ~ 20
             10
             |-20-contentView-20-| ~ 72
             10
-            |-20-div2-20-|
+            |-20-div2-20-| ~ 1
             1
         }
         
