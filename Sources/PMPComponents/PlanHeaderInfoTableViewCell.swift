@@ -54,34 +54,34 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         
         label.height(26)
         
-        subviews {
-            stackView
-        }
-        
-        layout {
-            10
-            |-20-stackView-20-|
-            10
-        }
-        
 //        subviews {
-//            label
-//            div1
-//            sublabel
-//            div2
+//            stackView
 //        }
 //        
 //        layout {
 //            10
-//            |-20-label-20-|
-//            4
-//            |-20-div1-20-|
-//            4
-//            |-20-sublabel-20-|
-//            4
-//            |-20-div1-20-|
+//            |-20-stackView-20-|
 //            10
 //        }
+        
+        subviews {
+            label
+            div1
+            sublabel
+            div2
+        }
+        
+        layout {
+            10
+            |-20-label-20-|
+            4
+            |-20-div1-20-|
+            4
+            |-20-sublabel-20-|
+            4
+            |-20-div1-20-|
+            10
+        }
         
     }
 
