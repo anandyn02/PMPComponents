@@ -77,7 +77,7 @@ public class PlanDateInfoTableViewCell: UITableViewCell {
             |-20-contentView-20-| ~ 72
             10
             |-20-div2-20-|
-            0
+            1
         }
         
         
