@@ -78,13 +78,14 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
             |-20-label-20-| ~ 24
             10
             |-20-div1-20-| ~ 1
-            4
+            10
             |-20-sublabel-20-| ~ 30
             10
             |-20-div1-20-| ~ 1
             10
         }
         
+        sublabel.backgroundColor = .yellow
     }
 
 }
