@@ -42,6 +42,8 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
+        sublabel.numberOfLines = 0
+        
         let div1 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
         div1.height(1)
         
@@ -75,11 +77,11 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
             10
             |-20-label-20-| ~ 24
             4
-            |-20-div1-20-|
+            |-20-div1-20-| ~ 1
             4
             |-20-sublabel-20-|
             4
-            |-20-div1-20-|
+            |-20-div1-20-| ~ 1
             10
         }
         
