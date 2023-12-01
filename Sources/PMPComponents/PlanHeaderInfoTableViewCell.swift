@@ -85,7 +85,6 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
             10
         }
         
-        sublabel.backgroundColor = .yellow
     }
 
 }
