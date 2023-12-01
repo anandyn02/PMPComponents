@@ -79,7 +79,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
             10
             |-20-div1-20-| ~ 1
             4
-            |-20-sublabel-20-|
+            |-20-sublabel-20-| ~ 30
             10
             |-20-div1-20-| ~ 1
             10
