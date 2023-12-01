@@ -76,11 +76,11 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         layout {
             10
             |-20-label-20-| ~ 24
-            4
+            10
             |-20-div1-20-| ~ 1
             4
-            |-20-sublabel-20-|
-            4
+            |-20-sublabel-20-| ~ 50
+            10
             |-20-div1-20-| ~ 1
             10
         }
