@@ -73,7 +73,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         
         layout {
             10
-            |-20-label-20-|
+            |-20-label-20-| ~ 24
             4
             |-20-div1-20-|
             4
