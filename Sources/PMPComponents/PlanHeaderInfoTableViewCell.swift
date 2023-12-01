@@ -48,30 +48,40 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         let div2 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
         div2.height(1)
 
-//        let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div1, sublabel, div2])
-//        stackView.spacing = 10
-//        stackView.alignment = .leading
+        let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div1, sublabel, div2])
+        stackView.spacing = 10
+        stackView.alignment = .leading
         
         label.height(26)
         
         subviews {
-            label
-            div1
-            sublabel
-            div2
+            stackView
         }
         
         layout {
             10
-            |-20-label-20-|
-            4
-            |-20-div1-20-|
-            4
-            |-20-sublabel-20-|
-            4
-            |-20-div1-20-|
+            |-20-stackView-20-|
             10
         }
+        
+//        subviews {
+//            label
+//            div1
+//            sublabel
+//            div2
+//        }
+//        
+//        layout {
+//            10
+//            |-20-label-20-|
+//            4
+//            |-20-div1-20-|
+//            4
+//            |-20-sublabel-20-|
+//            4
+//            |-20-div1-20-|
+//            10
+//        }
         
     }
 
