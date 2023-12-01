@@ -52,6 +52,8 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         stackView.spacing = 10
         stackView.alignment = .leading
         
+        label.height(26)
+        
         subviews {
             stackView
         }
