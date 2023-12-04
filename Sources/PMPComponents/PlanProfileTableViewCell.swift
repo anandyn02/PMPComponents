@@ -16,6 +16,7 @@ public class PlanProfileTableViewCell: UITableViewCell {
     public let label = IOComponent.createLabel(text: "Created By", font: .systemFont(ofSize: 14), color: .black)
     public let sublabel = IOComponent.createLabel(text: "Private", font: .systemFont(ofSize: 12), color: .black)
     public let avatar = IOComponent.createImageView(radius: 20, bgColor: .red)
+    public let shareBtn = IOComponent.createButton(text: "", titleColor: .clear, bgColor: .clear)
 
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,7 +45,10 @@ public class PlanProfileTableViewCell: UITableViewCell {
         backgroundColor = .clear
         
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label,sublabel])
-        stackView.spacing = 10
+        stackView.spacing = 4
+        stackView.alignment = .center
+        
+        shareBtn.width(40).height(40)
         avatar.size(40)
         
         subviews {
@@ -54,7 +58,7 @@ public class PlanProfileTableViewCell: UITableViewCell {
         
         layout {
             10
-            |-20-avatar-10-stackView-20-|
+            |-20-avatar-10-stackView-10-shareBtn-20-|
             10
         }
         
