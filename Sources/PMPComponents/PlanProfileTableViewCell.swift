@@ -46,7 +46,7 @@ public class PlanProfileTableViewCell: UITableViewCell {
         
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label,sublabel])
         stackView.spacing = 4
-        stackView.alignment = .center
+        stackView.alignment = .leading
         
         shareBtn.width(40).height(40)
         avatar.size(40)
