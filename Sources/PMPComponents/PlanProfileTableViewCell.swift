@@ -54,6 +54,7 @@ public class PlanProfileTableViewCell: UITableViewCell {
         subviews {
             stackView
             avatar
+            shareBtn
         }
         
         layout {
