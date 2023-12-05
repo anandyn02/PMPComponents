@@ -50,7 +50,7 @@ public class PlanLocationTableViewCell: UITableViewCell {
         
         layout {
             10
-            |-20-label-20-| ~ 22
+            |-20-label-20-|
             10
             |-20-stack-20-|
             10
