@@ -41,12 +41,17 @@ public class PlanMapTableViewCell: UITableViewCell {
     private func render() {
         selectionStyle = .none
         backgroundColor = .clear
-        
+        updateViewObjects()
+
         map.layer.cornerRadius = 8
         map.isUserInteractionEnabled = false
         
         subviews(container.subviews(map))
         map.height(200).fillContainer()
         container.top(15).left(20).right(20).bottom(5)
+    }
+    
+    public func updateViewObjects() {
+        
     }
 }

@@ -44,6 +44,8 @@ public class PlanProfileTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
+        updateViewObjects()
+        
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label,sublabel])
         stackView.spacing = 4
         stackView.alignment = .leading
@@ -62,6 +64,10 @@ public class PlanProfileTableViewCell: UITableViewCell {
             |-20-avatar-10-stackView-10-shareBtn-20-|
             10
         }
+        
+    }
+    
+    public func updateViewObjects() {
         
     }
 

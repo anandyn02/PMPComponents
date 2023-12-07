@@ -45,6 +45,8 @@ public class PlanDateInfoTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
+        updateViewObjects()
+        
         let contentView = IOComponent.createView(bgColor: .white)
         contentView.layer.cornerRadius = 8
         
@@ -79,7 +81,9 @@ public class PlanDateInfoTableViewCell: UITableViewCell {
             |-20-div2-20-| ~ 1
             1
         }
-        
+    }
+    
+    public func updateViewObjects() {
         
     }
 

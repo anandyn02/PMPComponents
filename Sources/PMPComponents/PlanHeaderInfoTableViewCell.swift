@@ -42,6 +42,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
         selectionStyle = .none
         backgroundColor = .clear
         
+        updateViewObjects()
         sublabel.numberOfLines = 0
         
         let div1 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
@@ -84,6 +85,10 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell {
             |-20-div2-20-| ~ 1
             10
         }
+        
+    }
+    
+    public func updateViewObjects() {
         
     }
 
