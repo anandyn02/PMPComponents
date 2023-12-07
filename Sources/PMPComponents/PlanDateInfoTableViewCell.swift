@@ -9,7 +9,11 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public class PlanDateInfoTableViewCell: UITableViewCell {
+public protocol TableViewCellSerializable {
+    func updateViewObjects()
+}
+
+public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializable {
 
     public static let cellIdentifier = "PlanDateInfoTableViewCell"
 

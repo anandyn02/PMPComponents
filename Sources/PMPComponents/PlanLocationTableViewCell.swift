@@ -9,8 +9,8 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public class PlanLocationTableViewCell: UITableViewCell {
-
+public class PlanLocationTableViewCell: UITableViewCell, TableViewCellSerializable {
+  
     public static let cellIdentifier = "PlanLocationTableViewCell"
 
     public let label = IOComponent.createLabel(text: "Location", font: .systemFont(ofSize: 22), color: .black)
@@ -57,7 +57,10 @@ public class PlanLocationTableViewCell: UITableViewCell {
         }
         
     }
-
+    
+    public func updateViewObjects() {
+        
+    }
 }
 
 

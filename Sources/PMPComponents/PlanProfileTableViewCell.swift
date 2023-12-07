@@ -9,7 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public class PlanProfileTableViewCell: UITableViewCell {
+public class PlanProfileTableViewCell: UITableViewCell, TableViewCellSerializable {
 
     public static let cellIdentifier = "PlanProfileTableViewCell"
 
