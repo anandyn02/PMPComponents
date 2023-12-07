@@ -48,9 +48,7 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
     private func render() {
         selectionStyle = .none
         backgroundColor = .clear
-        
-        updateViewObjects()
-        
+                
         let contentView = IOComponent.createView(bgColor: .white)
         contentView.layer.cornerRadius = 8
         
