@@ -66,7 +66,7 @@ public class PlanProfileTableViewCell: UITableViewCell, TableViewCellSerializabl
     }
     
     public func updateViewObjects() {
-        
+        debugPrint("in updateViewObjects")
     }
 
 }
