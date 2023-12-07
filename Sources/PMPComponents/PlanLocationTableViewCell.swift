@@ -43,6 +43,8 @@ public class PlanLocationTableViewCell: UITableViewCell, TableViewCellSerializab
         selectionStyle = .none
         backgroundColor = .clear
         
+        updateViewObjects()
+        
         subviews {
             label
             stack
@@ -58,9 +60,6 @@ public class PlanLocationTableViewCell: UITableViewCell, TableViewCellSerializab
         
     }
     
-    public func updateViewObjects() {
-        
-    }
 }
 
 

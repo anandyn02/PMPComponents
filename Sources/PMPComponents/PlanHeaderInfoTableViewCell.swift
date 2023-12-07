@@ -42,6 +42,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         selectionStyle = .none
         backgroundColor = .clear
         
+        updateViewObjects()
         sublabel.numberOfLines = 0
         
         let div1 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
@@ -87,8 +88,4 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         
     }
     
-    public func updateViewObjects() {
-        
-    }
-
 }

@@ -43,7 +43,9 @@ public class PlanProfileTableViewCell: UITableViewCell, TableViewCellSerializabl
     private func render() {
         selectionStyle = .none
         backgroundColor = .clear
-                
+        
+        updateViewObjects()
+                    
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label,sublabel])
         stackView.spacing = 4
         stackView.alignment = .leading
@@ -65,8 +67,4 @@ public class PlanProfileTableViewCell: UITableViewCell, TableViewCellSerializabl
         
     }
     
-    public func updateViewObjects() {
-        debugPrint("in updateViewObjects")
-    }
-
 }

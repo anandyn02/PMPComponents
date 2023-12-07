@@ -13,6 +13,12 @@ public protocol TableViewCellSerializable {
     func updateViewObjects()
 }
 
+public extension TableViewCellSerializable {
+    func updateViewObjects() {
+        print("empty")
+    }
+}
+
 public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializable {
 
     public static let cellIdentifier = "PlanDateInfoTableViewCell"
@@ -48,7 +54,9 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
     private func render() {
         selectionStyle = .none
         backgroundColor = .clear
-                
+               
+        updateViewObjects()
+        
         let contentView = IOComponent.createView(bgColor: .white)
         contentView.layer.cornerRadius = 8
         
@@ -85,8 +93,4 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
         }
     }
     
-    public func updateViewObjects() {
-        
-    }
-
 }
