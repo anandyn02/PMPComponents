@@ -14,7 +14,7 @@ public class ChatListCell: UITableViewCell {
     
     public static let cellIdentifier = "ChatListCell"
     
-    private let chatStack = IOComponent.createStackView(axisType: .horizontal, list: [])
+    public let chatStack = IOComponent.createStackView(axisType: .horizontal, list: [])
     private lazy var chatView = IOComponent.createView(radius: 0, bgColor: UIColor.white)
     public lazy var checkMarkButton = IOComponent.createButtonWith(bgColor: .clear)
     
