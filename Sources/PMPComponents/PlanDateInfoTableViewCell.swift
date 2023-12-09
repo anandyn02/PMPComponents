@@ -72,25 +72,26 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
         contentView.subviews {
             avatar
             stack
+            moreButton
             div2
         }
         
         avatar.left(10).centerVertically()
-        stack.left(50).centerVertically().right(10)
+        stack.left(50).centerVertically().right(40)
+        moreButton.right(10)
 
         moreButton.width(30).height(40)
         moreButton.isHidden = true
         subviews {
             label
             contentView
-            moreButton
         }
         
         layout {
             10
             |-20-label-20-| ~ 20
             10
-            |-20-contentView-10-moreButton-20-| ~ 72
+            |-20-contentView-20-| ~ 72
             10
             |-20-div2-20-| ~ 1
             1
