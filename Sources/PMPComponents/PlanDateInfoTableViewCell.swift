@@ -80,7 +80,7 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
         stack.left(50).centerVertically().right(40)
         moreButton.right(10)
 
-        moreButton.width(30).height(40)
+        moreButton.width(30).height(40).centerVertically()
         moreButton.isHidden = true
         subviews {
             label
