@@ -27,6 +27,7 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
     public let avatar = IOComponent.createImageView(radius: 0, bgColor: .white)
     public let dateLabel = IOComponent.createLabel(text: "Goa", font: .systemFont(ofSize: 14), color: .black)
     public let numberOfDaysLabel = IOComponent.createLabel(text: "Goa", font: .systemFont(ofSize: 14), color: .black)
+    public let moreButton = IOComponent.createButton(text: "", titleColor: .clear, bgColor: .clear)
 
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -77,16 +78,19 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
         avatar.left(10).centerVertically()
         stack.left(50).centerVertically().right(10)
 
+        moreButton.width(30).height(40)
+        moreButton.isHidden = true
         subviews {
             label
             contentView
+            moreButton
         }
         
         layout {
             10
             |-20-label-20-| ~ 20
             10
-            |-20-contentView-20-| ~ 72
+            |-20-contentView-10-moreButton-20-| ~ 72
             10
             |-20-div2-20-| ~ 1
             1
