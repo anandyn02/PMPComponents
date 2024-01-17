@@ -9,12 +9,12 @@ import UIKit
 import PMP_Component
 import Stevia
 
-@objc protocol OverridableCell {
+public protocol OverridableCell {
    func overrideCellUI()
 }
 
 public class NotificationFollowCell: UITableViewCell, OverridableCell {
-
+  
     public static let cellIdentifier = "NotificationFollowCell"
     
     public let avatar = IOComponent.createImageView(radius: 20, bgColor: .red)
@@ -71,8 +71,8 @@ public class NotificationFollowCell: UITableViewCell, OverridableCell {
     
     }
     
-    func overrideCellUI() {
+    public func overrideCellUI() {
         
     }
-    
+        
 }
