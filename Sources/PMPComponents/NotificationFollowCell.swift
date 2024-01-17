@@ -9,7 +9,11 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public class NotificationFollowCell: UITableViewCell {
+@objc protocol OverridableCell {
+   func overrideCellUI()
+}
+
+public class NotificationFollowCell: UITableViewCell, OverridableCell {
 
     public static let cellIdentifier = "NotificationFollowCell"
     
@@ -32,11 +36,14 @@ public class NotificationFollowCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         render()
+        overrideCellUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         render()
+        overrideCellUI()
+
        // fatalError("init(coder:) has not been implemented")
     }
  
@@ -63,8 +70,9 @@ public class NotificationFollowCell: UITableViewCell {
         }
     
     }
-
-    func updateUI() {
+    
+    func overrideCellUI() {
         
     }
+    
 }
