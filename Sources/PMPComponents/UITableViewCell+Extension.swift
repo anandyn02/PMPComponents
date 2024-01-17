@@ -9,7 +9,7 @@ import UIKit
 
 extension UITableViewCell {
     
-    @objc public func overrideCellUI() {
+    @objc open func overrideCellUI() {
         debugPrint("in Swift")
     }
 }
