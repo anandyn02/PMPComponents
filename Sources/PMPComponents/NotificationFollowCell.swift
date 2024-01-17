@@ -56,12 +56,10 @@ public class NotificationFollowCell: UITableViewCell {
             followButton
             deleteButton
         }
-        
-        deleteButton.top(10).right(10)
-        
+            
         layout {
             16
-            |-20-avatar-10-stackView-followButton-20-|
+            |-20-avatar-10-stackView-followButton-4-deleteButton-20-|
             16
         }
     
