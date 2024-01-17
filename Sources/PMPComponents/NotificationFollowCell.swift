@@ -9,7 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-class NotificationFollowCell: UITableViewCell {
+public class NotificationFollowCell: UITableViewCell {
 
     public static let cellIdentifier = "NotificationFollowCell"
     
@@ -19,8 +19,7 @@ class NotificationFollowCell: UITableViewCell {
     public let followButton = IOComponent.createButton(text: "Follow", titleColor: .clear, bgColor: .clear)
     public let deleteButton = IOComponent.createButton(text: "Follow", titleColor: .clear, bgColor: .clear)
 
-
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

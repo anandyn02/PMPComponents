@@ -9,7 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-class NotificationLikeCell: UITableViewCell {
+public class NotificationLikeCell: UITableViewCell {
 
     public static let cellIdentifier = "NotificationLikeCell"
     
@@ -18,7 +18,7 @@ class NotificationLikeCell: UITableViewCell {
     public let sublabel = IOComponent.createLabel(text: "10 mins ago", font: .systemFont(ofSize: 12), color: .black)
     public let feedImage = IOComponent.createImageView(radius: 0, bgColor: .white)
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }

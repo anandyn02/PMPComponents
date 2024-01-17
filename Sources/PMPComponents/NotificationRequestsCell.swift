@@ -9,7 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-class NotificationRequestsCell: UITableViewCell {
+public class NotificationRequestsCell: UITableViewCell {
     
     public static let cellIdentifier = "NotificationRequestsCell"
 
@@ -19,7 +19,7 @@ class NotificationRequestsCell: UITableViewCell {
     public let badgeLabel = IOComponent.createLabel(text: "01", font: .systemFont(ofSize: 12), color: .lightGray)
 
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
