@@ -31,13 +31,14 @@ public class NotificationRequestsCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         render()
-        updateUI()
+        overrideCellUI()
+
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         render()
-        updateUI()
+        overrideCellUI()
     }
  
     private func render() {
@@ -62,10 +63,6 @@ public class NotificationRequestsCell: UITableViewCell {
             |-20-avatar-10-stackView-20-|
             16
         }
-        
-    }
-    
-    func updateUI() {
         
     }
 

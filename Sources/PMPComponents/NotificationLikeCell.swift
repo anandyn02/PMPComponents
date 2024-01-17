@@ -31,11 +31,15 @@ public class NotificationLikeCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         render()
+        overrideCellUI()
+
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         render()
+        overrideCellUI()
+
        // fatalError("init(coder:) has not been implemented")
     }
  
@@ -60,7 +64,4 @@ public class NotificationLikeCell: UITableViewCell {
     
     }
 
-    func updateUI() {
-        
-    }
 }

@@ -9,11 +9,7 @@ import UIKit
 import PMP_Component
 import Stevia
 
-public protocol OverridableCell {
-   func overrideCellUI()
-}
-
-public class NotificationFollowCell: UITableViewCell, OverridableCell {
+public class NotificationFollowCell: UITableViewCell {
   
     public static let cellIdentifier = "NotificationFollowCell"
     
@@ -70,9 +66,5 @@ public class NotificationFollowCell: UITableViewCell, OverridableCell {
         }
     
     }
-    
-    public func overrideCellUI() {
-        
-    }
-        
+       
 }
