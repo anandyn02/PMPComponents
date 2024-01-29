@@ -55,7 +55,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         stackView.spacing = 0
         stackView.alignment = .leading
         label.numberOfLines = 0
-        label.height(26)
+        //label.height(26)
         
         subviews {
             stackView
