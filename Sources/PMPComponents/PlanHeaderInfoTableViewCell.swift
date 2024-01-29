@@ -45,10 +45,10 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         updateViewObjects()
         sublabel.numberOfLines = 0
         
-        let div1 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
+        let div1 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
         div1.height(10)
         
-        let div2 = IOComponent.createView(bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
+        let div2 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
         div2.height(10)
 
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div1, sublabel, div2])
