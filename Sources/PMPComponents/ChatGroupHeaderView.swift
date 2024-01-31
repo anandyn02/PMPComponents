@@ -56,7 +56,7 @@ public class ChatGroupHeaderView: UIView {
         editButton.width(40).height(40).top(30).centerHorizontally(offset: 30)
 
         layout {
-            20
+            
             avatar.centerHorizontally()
             10
             |-20-label.height(50)-20-|
