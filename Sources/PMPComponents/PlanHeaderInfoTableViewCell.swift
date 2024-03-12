@@ -54,7 +54,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         div2.height(1).width(width - 40)
 
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div2, sublabel])
-        stackView.spacing = 10
+        stackView.spacing = 16
         stackView.alignment = .leading
         stackView.distribution = .fillProportionally
         label.numberOfLines = 0
@@ -68,7 +68,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         layout {
             10
             |-20-stackView-20-|
-            10
+            16
             |-20-div1-20-|
             10
         }
