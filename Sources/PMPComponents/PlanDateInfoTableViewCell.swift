@@ -93,7 +93,7 @@ public class PlanDateInfoTableViewCell: UITableViewCell, TableViewCellSerializab
             10
             |-20-contentView-20-| ~ 72
             10
-            |-20-div2-20-| ~ 1
+            |-0-div2-0-| ~ 1
             1
         }
     }
