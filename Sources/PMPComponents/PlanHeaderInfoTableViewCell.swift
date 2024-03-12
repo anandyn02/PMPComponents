@@ -49,10 +49,10 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         
         let div1 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
         div1.height(1)       
-        div2.height(1)
+        div2.height(10)
 
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div2, sublabel])
-        stackView.spacing = 2
+        stackView.spacing = 10
         stackView.alignment = .leading
         stackView.distribution = .fillProportionally
         label.numberOfLines = 0
