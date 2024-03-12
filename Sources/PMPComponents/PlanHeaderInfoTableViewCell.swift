@@ -74,7 +74,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
             |-20-stackView-20-|
             16
             |-20-div1-20-|
-            10
+            1
         }
         
 //        subviews {
