@@ -20,6 +20,8 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
 
     public  let div1 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
     
+    public var vStackView = UIStackView()
+    
     public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -58,6 +60,8 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         stackView.alignment = .leading
         stackView.distribution = .fillProportionally
         label.numberOfLines = 0
+        
+        vStackView = stackView
         //label.height(26)
         
         subviews {
