@@ -16,7 +16,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
     public let label = IOComponent.createLabel(text: "Goa", font: .systemFont(ofSize: 22), color: .black)
     public let sublabel = IOComponent.createLabel(text: "Some Next", font: .systemFont(ofSize: 12), color: .black)
     
-    public let div2 = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 1), color: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
+    public let div2 = IOComponent.createLabel(text: "", font: .systemFont(ofSize: 1), color: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 0.5))
 
     public  let div1 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
     
@@ -49,7 +49,7 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         updateViewObjects()
         sublabel.numberOfLines = 0
         
-        div1.height(1)  
+        div1.height(1)
         let width = UIScreen.main.bounds.width
         div2.height(1).width(width - 40)
 
