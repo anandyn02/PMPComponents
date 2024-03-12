@@ -48,8 +48,9 @@ public class PlanHeaderInfoTableViewCell: UITableViewCell, TableViewCellSerializ
         sublabel.numberOfLines = 0
         
         let div1 = IOComponent.createImageView(radius: 0, bgColor: UIColor(red: 208/255, green: 200/255, blue: 196/255, alpha: 1.0))
-        div1.height(1)       
-        div2.height(10)
+        div1.height(1)  
+        let width = UIScreen.main.bounds.width
+        div2.height(10).width(width - 40)
 
         let stackView = IOComponent.createStackView(axisType: .vertical, list: [label, div2, sublabel])
         stackView.spacing = 10
